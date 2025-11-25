@@ -1004,7 +1004,13 @@ calcuBtn.addActionListener(e -> {
     	
     	int years = finallyRetired( principal,  expense,  rate, 120);
     	
+    	
     	finalYearValue.setText(String.valueOf(years));
+    	
+    	if (finalYearValue.getText().contains("120"))
+    	{
+    		finalYearValue.setText("120 | Retirement funds will never deplete in lifetime");
+    	}
     	
     	
 
