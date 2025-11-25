@@ -499,7 +499,7 @@ public class MainWindow extends JFrame {
         	
         	//Converts whole numbers into decimal format if it is > 1
         	//This allows both whole numbers and decimals to be used
-        	if (rate > 1) {
+        	if (rate >= 1) {
                 rate /= 100.0;
             }
         	
@@ -770,6 +770,9 @@ calcuBtn.addActionListener(e -> {
             continue;
         }
 
+        if (rateVal >= 1) {
+            rateVal /= 100.0;
+        }
 
 	     // Bounds: decimal format in [0.0, 1.0] → 0%..100% (non-negative only)
 	     if (Double.isNaN(rateVal) || Double.isInfinite(rateVal)) {
@@ -994,7 +997,7 @@ calcuBtn.addActionListener(e -> {
     	
     	//Converts whole numbers into decimal format if it is > 1
     	//This allows both whole numbers and decimals to be used
-    	if (rate > 1) {
+    	if (rate >= 1) {
             rate = rate / 100.0;
         }
     	
@@ -1216,7 +1219,7 @@ calcuBtn.addActionListener(e -> {
     	//Converts whole numbers into decimal format if it is > 1
     	//This allows both whole numbers and decimals to be used
     	
-    	if (rate > 1) {
+    	if (rate >= 1) {
             rate = rate / 100.0;
         }
     	
@@ -1259,7 +1262,7 @@ calcuBtn.addActionListener(e -> {
 	//This methods builds the fixed investor chart
 	public static JFreeChart buildFixedInvestmentChart(double principal, double rate, int years) {
 	    // Convert percentage to decimal if needed (e.g., 80 -> 0.80)
-	    if (rate > 1.0) {
+	    if (rate >= 1.0) {
 	        rate = rate / 100.0;
 	    }
 
