@@ -747,6 +747,12 @@ calcuBtn.addActionListener(e -> {
             continue;
         }
 
+        if (rateVal < 0.0 || rateVal > 1000) {
+	         errors.append(String.format("Row %d: Rate %.2f out of range [0, 1000].%n", r + 1, rateVal));
+	         badRows.add(r);
+	         continue;
+	     }
+        
         if (rateVal >= 1) {
             rateVal /= 100.0;
         }
@@ -757,11 +763,7 @@ calcuBtn.addActionListener(e -> {
 	         badRows.add(r);
 	         continue;
 	     }
-	     if (rateVal < 0.0 || rateVal > 1000) {
-	         errors.append(String.format("Row %d: Rate %.4f out of range [0, 1000].%n", r + 1, rateVal));
-	         badRows.add(r);
-	         continue;
-	     }
+	     
 
         rateList[r] = rateVal;
     }
