@@ -17,12 +17,11 @@ lifespan, optimizing their spending power without the risk of premature depletio
 
 GROUP MEMBERS & CONTRIBUTIONS:
 ----------------------------------------------------------------------------------------
-| Name                        | Contribution Role                                       |
-|-----------------------------|---------------------------------------------------------|
-| Marco Mclean (2209181)     | Project Lead, Binary Search Algorithm Implementation    |
-| Andre Campbell (2301103)   | Fixed & Variable Simulation Logic, Mathematical Models  |
+| Name                        | Contribution Role                                     				|
+|-----------------------------|---------------------------------------------------------			|
+| Marco Mclean (2209181)     | Project Lead, Maximum Expense, Binary Search Algorithm Implementation|
+| Andre Campbell (2301103)   | Finally Retired & Variable Simulation Logic, Mathematical Models  |
 | Chevannese Ellis (2301109) | User Interface (GUI) Design & Input Error Handling      |
-| Shanika McLeggan (1503802)           |   													  |
 ---------------------------------------------------------------------------------------
 
 AI USAGE STATEMENT (Rubric Criterion #5):
