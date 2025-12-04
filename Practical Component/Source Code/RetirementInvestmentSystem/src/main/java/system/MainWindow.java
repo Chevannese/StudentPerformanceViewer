@@ -15,14 +15,6 @@ Crucially, it utilizes an Algorithmic Design approach—specifically Binary Sear
 This ensures a retiree's funds reach exactly zero at the end of their target
 lifespan, optimizing their spending power without the risk of premature depletion.
 
-GROUP MEMBERS & CONTRIBUTIONS:
-----------------------------------------------------------------------------------------
-| Name                        | Contribution Role                                     				|
-|-----------------------------|---------------------------------------------------------			|
-| Marco Mclean (2209181)     | Project Lead, Maximum Expense, Binary Search Algorithm Implementation|
-| Andre Campbell (2301103)   | Finally Retired & Variable Simulation Logic, Mathematical Models  |
-| Chevannese Ellis (2301109) | User Interface (GUI) Design & Input Error Handling      |
----------------------------------------------------------------------------------------
 
 AI USAGE STATEMENT (Rubric Criterion #5):
 -----------------------------------------
@@ -1111,7 +1103,7 @@ calcuBtn.addActionListener(e -> {
     JLabel returnRateLabel = new JLabel("Expected Rate");
     JTextField returnRateField = new JTextField(15);
     
-    JLabel targetYearLabel = new JLabel("Target Year");
+    JLabel targetYearLabel = new JLabel("Target Years");
     JTextField targetYearField = new JTextField(15);
     
     JLabel percentageReturn = new JLabel("%");
